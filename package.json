@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace=astro-test\" \"npm run dev --workspace=studio-test\""
+    "dev": "concurrently \"npm run dev --workspace=astro-test\" \"npm run dev --workspace=studio-test\"",
+    "dev:astro": "cd astro-test && npm run dev",
+    "dev:studio": "cd studio-test && npm run dev",
+    "build:astro": "cd astro-test && npm run build",
+    "build:studio": "cd studio-test && npm run build",
+    "build": "npm run build:astro && cp -r studio-test/dist astro-test/dist/studio"
   },
   "keywords": [],
   "author": "",
