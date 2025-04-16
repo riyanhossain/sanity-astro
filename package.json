@@ -6,9 +6,9 @@
     "dev": "concurrently \"npm run dev --workspace=astro-test\" \"npm run dev --workspace=studio-test\"",
     "dev:astro": "cd astro-test && npm run dev",
     "dev:studio": "cd studio-test && npm run dev",
-    "build:astro": "cd astro-test && npm install && npm run build",
+    "build:astro": "cd astro-test && npm run build",
     "build:studio": "cd studio-test && npm run build",
-    "build": "npm install && npm run build:astro"
+    "build": "npm run build:astro"
   },
   "keywords": [],
   "author": "",
