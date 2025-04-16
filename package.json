@@ -8,7 +8,7 @@
     "dev:studio": "cd studio-test && npm run dev",
     "build:astro": "cd astro-test && npm install && npm run build",
     "build:studio": "cd studio-test && npm run build",
-    "build": "npm run build:astro"
+    "build": "npm install && npm run build:astro"
   },
   "keywords": [],
   "author": "",
